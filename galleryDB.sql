@@ -1,20 +1,20 @@
--- YAF DİJİTAL SANAT GALERİSİ DB V3.0
+-- YAF DİJİTAL SANAT GALERİSİ DB V3.5
 
 -- ===========================
 -- 1. Tablolar
 -- ===========================
-
 CREATE TABLE kategori (
     kategori_id SERIAL PRIMARY KEY,
     kategori_adi VARCHAR(100) NOT NULL UNIQUE
 );
-
+insert into kategori (kategori_adi) values ('Dijital İllüstrasyon');
+insert into kategori (kategori_adi) values ('3D Modelleme');
 CREATE TABLE sanatci (
     sanatci_id SERIAL PRIMARY KEY,
     isim VARCHAR(50) NOT NULL CHECK (NOT strpos(isim, ' ') > 0),
     ekisim VARCHAR(50),
     soyisim VARCHAR(50) NOT NULL CHECK (NOT strpos(soyisim, ' ') > 0),
-    foto BYTEA NOT NULL,
+    foto TEXT NOT NULL,
     tel_no VARCHAR(15),
     email VARCHAR(100) UNIQUE NOT NULL,
     sifre VARCHAR(100) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE kullanici (
     isim VARCHAR(50) NOT NULL CHECK (NOT strpos(isim, ' ') > 0),
     ekisim VARCHAR(50),
     soyisim VARCHAR(50) NOT NULL CHECK (NOT strpos(soyisim, ' ') > 0),
-    foto BYTEA NOT NULL,
+    foto TEXT NOT NULL,
     tel_no VARCHAR(15),
     email VARCHAR(100) UNIQUE NOT NULL,
     sifre VARCHAR(100) NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE kullanici (
 CREATE TABLE eserler (
     eser_id SERIAL PRIMARY KEY,
     sanatci_id INTEGER REFERENCES sanatci(sanatci_id) ON DELETE CASCADE,
-    eser_adi VARCHAR(150) NOT NULL,
+    eser_ismi VARCHAR(150) NOT NULL,
     uretim_teknigi VARCHAR(100),
     yayinlanma_tarihi DATE,
     kategori_id INTEGER REFERENCES kategori(kategori_id),
@@ -55,6 +55,7 @@ CREATE TABLE dosyalar (
 CREATE TABLE admin (
     admin_id SERIAL PRIMARY KEY,
     email VARCHAR(100) NOT NULL UNIQUE,
+	sifre VARCHAR(100) NOT NULL,
     isim VARCHAR(50),
     ekisim VARCHAR(50),
     soyisim VARCHAR(50)
@@ -96,7 +97,7 @@ $$ LANGUAGE plpgsql;
 CREATE OR REPLACE FUNCTION yeni_eklenen_eser(eser RECORD)
 RETURNS VOID AS $$
 BEGIN
-    RAISE NOTICE 'Yeni eser: %', eser.eser_adi;
+    RAISE NOTICE 'Yeni eser: %', eser.eser_ismi;
 END;
 $$ LANGUAGE plpgsql;
 
@@ -108,7 +109,7 @@ $$ LANGUAGE plpgsql;
 CREATE OR REPLACE FUNCTION notify_yeni_eser()
 RETURNS TRIGGER AS $$
 BEGIN
-    RAISE NOTICE 'Başarıyla yeni eser eklendi: %', NEW.eser_adi;
+    RAISE NOTICE 'Başarıyla yeni eser eklendi: %', NEW.eser_ismi;
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
