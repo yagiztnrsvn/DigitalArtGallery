@@ -37,7 +37,6 @@ CREATE TABLE eserler (
     eser_id SERIAL PRIMARY KEY,
     sanatci_id INTEGER REFERENCES sanatci(sanatci_id) ON DELETE CASCADE,
     eser_ismi VARCHAR(150) NOT NULL,
-    uretim_teknigi VARCHAR(100),
     yayinlanma_tarihi DATE,
     kategori_id INTEGER REFERENCES kategori(kategori_id),
     dosya_yolu TEXT,
