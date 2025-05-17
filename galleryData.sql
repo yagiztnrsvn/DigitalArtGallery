@@ -1,5 +1,4 @@
 -- YAF DİJİTAL SANAT GALERİSİ VERİLERİ V2.0
-
 -- ===========================
 -- Kategori Tablosu
 -- ===========================
@@ -39,64 +38,62 @@ INSERT INTO kategori (kategori_adi) VALUES ('Postmodernizm');
 -- Sanatçı Tablosu
 -- ===========================
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Leonardo', NULL, 'daVinci', 'URL_MANUAL', '+39-150-000-0001', 'leonardo@renaissance.com', 'MonaLisa1503', '1452-04-15');
+	VALUES ('Leonardo', ' ', 'daVinci', 'sanatci/foto1.jpg', '', 'leonardo@gmail.com', 'MonaLisa1503', '1452-04-15');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Michelangelo', NULL, 'Buonarroti', 'URL_MANUAL', '+39-150-000-0002', 'michelangelo@chapel.org', 'Sistine1512', '1475-03-06');
+VALUES ('Michelangelo', NULL, 'Buonarroti', 'sanatci/foto2.jpg', '', 'michelangelo@chapel.org', 'Sistine1512', '1475-03-06');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Raffaello', NULL, 'Sanzio', 'URL_MANUAL', '+39-150-000-0003', 'raphael@vatican.it', 'SchoolOfAthens', '1483-04-06');
+VALUES ('Raffaello', NULL, 'Sanzio', 'sanatci/foto3.jpg', '', 'raphael@vatican.it', 'SchoolOfAthens', '1483-04-06');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Rembrandt', NULL, 'vanRijn', 'URL_MANUAL', '+31-150-000-0004', 'rembrandt@amsterdam.nl', 'NightWatch1642', '1606-07-15');
+VALUES ('Rembrandt', NULL, 'vanRijn', 'sanatci/foto4.jpg', '', 'rembrandt@amsterdam.nl', 'NightWatch1642', '1606-07-15');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Johannes', NULL, 'Vermeer', 'URL_MANUAL', '+31-150-000-0005', 'vermeer@delft.nl', 'GirlWithPearl', '1632-10-31');
+VALUES ('Johannes', NULL, 'Vermeer', 'sanatci/foto5.jpg', '', 'vermeer@delft.nl', 'GirlWithPearl', '1632-10-31');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Francisco', NULL, 'Goya', 'URL_MANUAL', '+34-150-000-0006', 'goya@spain.es', 'BlackPaintings', '1746-03-30');
+VALUES ('Francisco', NULL, 'Goya', 'sanatci/foto6.jpg', '', 'goya@spain.es', 'BlackPaintings', '1746-03-30');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Eugène', NULL, 'Delacroix', 'URL_MANUAL', '+33-150-000-0007', 'delacroix@france.fr', 'Liberty1830', '1798-04-26');
+VALUES ('Eugène', NULL, 'Delacroix', 'sanatci/foto7.jpg', '', 'delacroix@france.fr', 'Liberty1830', '1798-04-26');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Claude', NULL, 'Monet', 'URL_MANUAL', '+33-150-000-0008', 'monet@giverny.fr', 'WaterLilies1920', '1840-11-14');
+VALUES ('Claude', NULL, 'Monet', 'sanatci/foto8.jpg', '', 'monet@giverny.fr', 'WaterLilies1920', '1840-11-14');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Edgar', NULL, 'Degas', 'URL_MANUAL', '+33-150-000-0009', 'degas@paris.fr', 'BalletDancers', '1834-07-19');
+VALUES ('Edgar', NULL, 'Degas', 'sanatci/foto9.jpg', '', 'degas@paris.fr', 'BalletDancers', '1834-07-19');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Vincent', NULL, 'vanGogh', 'URL_MANUAL', '+31-150-000-0010', 'vincent@art.nl', 'StarryNight1889', '1853-03-30');
+VALUES ('Vincent', NULL, 'vanGogh', 'sanatci/foto10.jpg', '', 'vincent@art.nl', 'StarryNight1889', '1853-03-30');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Pablo', NULL, 'Picasso', 'URL_MANUAL', '+34-150-000-0011', 'picasso@spain.es', 'Guernica1937', '1881-10-25');
+VALUES ('Pablo', NULL, 'Picasso', 'sanatci/foto11.jpg', '', 'picasso@spain.es', 'Guernica1937', '1881-10-25');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Salvador', NULL, 'Dali', 'URL_MANUAL', '+34-150-000-0012', 'dali@meltingclocks.es', 'Persistence1931', '1904-05-11');
+VALUES ('Salvador', NULL, 'Dali', 'sanatci/foto12.jpg', '', 'dali@meltingclocks.es', 'Persistence1931', '1904-05-11');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Joan', NULL, 'Miro', 'URL_MANUAL', '+34-150-000-0013', 'miro@catalunya.es', 'BlueTriptych', '1893-04-20');
+VALUES ('Joan', NULL, 'Miro', 'sanatci/foto13.jpg', '', 'miro@catalunya.es', 'BlueTriptych', '1893-04-20');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Jackson', NULL, 'Pollock', 'URL_MANUAL', '+1-150-000-0014', 'pollock@ny.us', 'Drip1948', '1912-01-28');
+VALUES ('Jackson', NULL, 'Pollock', 'sanatci/foto14.jpg', '', 'pollock@ny.us', 'Drip1948', '1912-01-28');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Andy', NULL, 'Warhol', 'URL_MANUAL', '+1-150-000-0015', 'warhol@popart.us', 'Marilyn1962', '1928-08-06');
+VALUES ('Andy', NULL, 'Warhol', 'sanatci/foto15.jpg', '', 'warhol@popart.us', 'Marilyn1962', '1928-08-06');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Frida', NULL, 'Kahlo', 'URL_MANUAL', '+52-150-000-0016', 'frida@mexico.mx', 'TwoFridas1939', '1907-07-06');
+VALUES ('Frida', NULL, 'Kahlo', 'sanatci/foto16.jpg', '', 'frida@mexico.mx', 'TwoFridas1939', '1907-07-06');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Georgia', NULL, 'OKeeffe', 'URL_MANUAL', '+1-150-000-0017', 'okeeffe@modern.us', 'RedCanna1924', '1887-11-15');
+VALUES ('Georgia', NULL, 'OKeeffe', 'sanatci/foto17.jpg', '', 'okeeffe@modern.us', 'RedCanna1924', '1887-11-15');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Mark', NULL, 'Rothko', 'URL_MANUAL', '+1-150-000-0018', 'rothko@abstract.us', 'OrangeBlue1956', '1903-09-25');
+VALUES ('Mark', NULL, 'Rothko', 'sanatci/foto18.jpg', '', 'rothko@abstract.us', 'OrangeBlue1956', '1903-09-25');
 
 INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Yayoi', NULL, 'Kusama', 'URL_MANUAL', '+81-150-000-0019', 'kusama@dots.jp', 'InfinityMirrors', '1929-03-22');
+VALUES ('Yayoi', NULL, 'Kusama', 'sanatci/foto19.jpg', '', 'kusama@dots.jp', 'InfinityMirrors', '1929-03-22');
 
-INSERT INTO sanatci (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
-VALUES ('Banksy', NULL, 'Anonymous', 'URL_MANUAL', '+44-150-000-0020', 'banksy@unknown.uk', 'StreetRebel', '1974-07-28');
 
 
 -- ===========================
@@ -104,16 +101,16 @@ VALUES ('Banksy', NULL, 'Anonymous', 'URL_MANUAL', '+44-150-000-0020', 'banksy@u
 -- ===========================
 INSERT INTO kullanici (isim, ekisim, soyisim, foto, tel_no, email, sifre, dogum_tarihi)
 VALUES
-('Ayşe', NULL, 'Demir', 'URL_MANUAL', '+90 532 111 2233', 'ayse.demir@example.com', 'eF3v9sKdP1', '1996-04-12'),
-('Mert', 'Ali', 'Kaya', 'URL_MANUAL', '+90 544 998 1122', 'mert.kaya@example.com', 'bX8tQp6ZaM', '1990-10-05'),
-('Zeynep', NULL, 'Çelik', 'URL_MANUAL', '+90 531 456 7890', 'zeynep.celik@example.com', 'vR2cMn71Ls', '1998-07-21'),
-('Emre', 'Can', 'Yıldız', 'URL_MANUAL', '+90 555 123 4567', 'emre.yildiz@example.com', 'sNd48WmcQz', '1987-01-17'),
-('Elif', NULL, 'Aydın', 'URL_MANUAL', '+90 500 345 6789', 'elif.aydin@example.com', 'kL7fPz02Xe', '1993-03-30'),
-('Lucas', NULL, 'Miller', 'URL_MANUAL', '+1 202 555 0147', 'lucas.miller@example.com', 'uJ5nWr8ZqC', '1991-09-14'),
-('Sophie', 'Marie', 'Dubois', 'URL_MANUAL', '+33 6 45 23 89 01', 'sophie.dubois@example.com', 'pXe9Dm1VoQ', '1995-06-28'),
-('Hiroshi', NULL, 'Tanaka', 'URL_MANUAL', '+81 90 1234 5678', 'hiroshi.tanaka@example.com', 'tQ3fNc7LaV', '1989-11-03'),
-('Anna', NULL, 'Schmidt', 'URL_MANUAL', '+49 170 2345678', 'anna.schmidt@example.com', 'zRd1MfvXy8', '1992-08-19'),
-('Luca', 'Giovanni', 'Rossi', 'URL_MANUAL', '+39 347 7654321', 'luca.rossi@example.com', 'mVp05LtYre', '1990-02-11');
+('Ayşe', NULL, 'Demir', 'kullanici/profilfoto.jpg', '', 'ayse.demir@example.com', 'eF3v9sKdP1', '1996-04-12'),
+('Mert', 'Ali', 'Kaya', 'kullanici/profilfoto.jpg', '', 'mert.kaya@example.com', 'bX8tQp6ZaM', '1990-10-05'),
+('Zeynep', NULL, 'Çelik', 'kullanici/profilfoto.jpg', '', 'zeynep.celik@example.com', 'vR2cMn71Ls', '1998-07-21'),
+('Emre', 'Can', 'Yıldız', 'kullanici/profilfoto.jpg', '', 'emre.yildiz@example.com', 'sNd48WmcQz', '1987-01-17'),
+('Elif', NULL, 'Aydın', 'kullanici/profilfoto.jpg', '', 'elif.aydin@example.com', 'kL7fPz02Xe', '1993-03-30'),
+('Lucas', NULL, 'Miller', 'kullanici/profilfoto.jpg', '', 'lucas.miller@example.com', 'uJ5nWr8ZqC', '1991-09-14'),
+('Sophie', 'Marie', 'Dubois', 'kullanici/profilfoto.jpg', '', 'sophie.dubois@example.com', 'pXe9Dm1VoQ', '1995-06-28'),
+('Hiroshi', NULL, 'Tanaka', 'kullanici/profilfoto.jpg', '', 'hiroshi.tanaka@example.com', 'tQ3fNc7LaV', '1989-11-03'),
+('Anna', NULL, 'Schmidt', 'kullanici/profilfoto.jpg', '', 'anna.schmidt@example.com', 'zRd1MfvXy8', '1992-08-19'),
+('Luca', 'Giovanni', 'Rossi', 'kullanici/profilfoto.jpg', '', 'luca.rossi@example.com', 'mVp05LtYre', '1990-02-11');
 
 
 -- ===========================
@@ -121,34 +118,34 @@ VALUES
 -- ===========================
 INSERT INTO eserler (sanatci_id, eser_ismi, yayinlanma_tarihi, kategori_id, dosya_yolu, aciklama) VALUES
 -- Leonardo da Vinci (1)
-(1, 'Mona Lisa', '1503-01-01', 17, 'manuel/mona_lisa.jpg', 'Leonardo da Vinci tarafından yapılmış ünlü portre.'),
+(1, 'Mona Lisa', '1503-01-01', 17, 'eser/11.jpg', 'Leonardo da Vinci tarafından yapılmış ünlü portre.'),
 -- Michelangelo (2)
-(2, 'Davud Heykeli', '1504-01-01', 20, 'manuel/davud_heykeli.jpg', 'Michelangelo’nun Rönesans döneminden heykeli.'),
+(2, 'Davud Heykeli', '1504-01-01', 20, 'eser/21.jpg', 'Michelangelo’nun Rönesans döneminden heykeli.'),
 -- Rembrandt (3)
-(3, 'Gece Devriyesi', '1642-01-01', 17, 'manuel/gece_devriyesi.jpg', 'Hollandalı barok ressamın başyapıtı.'),
+(3, 'Gece Devriyesi', '1642-01-01', 17, 'eser/31.jpg', 'Hollandalı barok ressamın başyapıtı.'),
 -- Vincent van Gogh (4)
-(4, 'Yıldızlı Gece', '1889-06-01', 17, 'manuel/yildizli_gece.jpg', 'Van Gogh’un en bilinen eserlerinden biri.'),
+(4, 'Yıldızlı Gece', '1889-06-01', 17, 'eser/41.jpg', 'Van Gogh’un en bilinen eserlerinden biri.'),
 -- Pablo Picasso (5)
-(5, 'Guernica', '1937-01-01', 1, 'manuel/guernica.jpg', 'İspanyol iç savaşını anlatan dramatik tablo.'),
+(5, 'Guernica', '1937-01-01', 1, 'eser/51.jpg', 'İspanyol iç savaşını anlatan dramatik tablo.'),
 -- Salvador Dalí (6)
-(6, 'Belleğin Azmi', '1931-01-01', 9, 'manuel/bellek_azmi.jpg', 'Dalí’nin eriyen saatlerle simgeleşmiş eseri.'),
+(6, 'Belleğin Azmi', '1931-01-01', 9, 'eser/61.jpg', 'Dalí’nin eriyen saatlerle simgeleşmiş eseri.'),
 -- Frida Kahlo (7)
-(7, 'İki Frida', '1939-01-01', 17, 'manuel/iki_frida.jpg', 'Kahlo’nun en güçlü otoportrelerinden biri.'),
+(7, 'İki Frida', '1939-01-01', 17, 'eser/71.jpg', 'Kahlo’nun en güçlü otoportrelerinden biri.'),
 -- Andy Warhol (8)
-(8, 'Marilyn Diptych', '1962-01-01', 6, 'manuel/marilyn_diptych.jpg', 'Pop art’ın ikonik eseri.'),
+(8, 'Marilyn Diptych', '1962-01-01', 6, 'eser/81.jpg', 'Pop art’ın ikonik eseri.'),
 -- Claude Monet (9)
-(9, 'Nilüferler', '1916-01-01', 17, 'manuel/niluferler.jpg', 'Monet’nin doğa temalı izlenimci eseri.'),
+(9, 'Nilüferler', '1916-01-01', 17, 'eser/91.jpg', 'Monet’nin doğa temalı izlenimci eseri.'),
 -- Edvard Munch (10)
-(10, 'Çığlık', '1893-01-01', 17, 'manuel/ciglik.jpg', 'Modern sanatın en tanınmış ekspresyonist tablosu.');
+(10, 'Çığlık', '1893-01-01', 17, 'eser/101.jpg', 'Modern sanatın en tanınmış ekspresyonist tablosu.');
 
 
 
 -- ===========================
 -- Dosyalar Tablosu
 -- ===========================
-INSERT INTO dosyalar (eser_id, dosya_adi, dosya_yolu) VALUES
-(1, 'dosya1.png', 'yol/dosya1.png'),
-(2, 'dosya2.jpg', 'yol/dosya2.jpg');
+--INSERT INTO dosyalar (eser_id, dosya_adi, dosya_yolu) VALUES
+--(1, 'dosya1.png', 'yol/dosya1.png'),
+--(2, 'dosya2.jpg', 'yol/dosya2.jpg');
 
 -- ===========================
 -- Admin Tablosu
