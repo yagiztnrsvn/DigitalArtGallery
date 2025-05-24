@@ -7,8 +7,6 @@ CREATE TABLE kategori (
     kategori_id SERIAL PRIMARY KEY,
     kategori_adi VARCHAR(100) NOT NULL UNIQUE
 );
-insert into kategori (kategori_adi) values ('Dijital İllüstrasyon');
-insert into kategori (kategori_adi) values ('3D Modelleme');
 CREATE TABLE sanatci (
     sanatci_id SERIAL PRIMARY KEY,
     isim VARCHAR(50) NOT NULL CHECK (NOT strpos(isim, ' ') > 0),
