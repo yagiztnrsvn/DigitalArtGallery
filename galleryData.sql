@@ -129,7 +129,7 @@ INSERT INTO eserler (sanatci_id, eser_ismi, yayinlanma_tarihi, kategori_id, dosy
 (5, 'Guernica', '1937-01-01', 1, 'eser/51.jpg', 'İspanyol iç savaşını anlatan dramatik tablo.'),
 -- Salvador Dalí (6)
 (6, 'Belleğin Azmi', '1931-01-01', 9, 'eser/61.jpg', 'Dalí’nin eriyen saatlerle simgeleşmiş eseri.'),
--- Frida Kahlo (7)
+x-- Frida Kahlo (7)
 (7, 'İki Frida', '1939-01-01', 17, 'eser/71.jpg', 'Kahlo’nun en güçlü otoportrelerinden biri.'),
 -- Andy Warhol (8)
 (8, 'Marilyn Diptych', '1962-01-01', 6, 'eser/81.jpg', 'Pop art’ın ikonik eseri.'),
